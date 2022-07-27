@@ -26,7 +26,7 @@ class _HomePagePageState extends State<HomePagePage> {
     return const SafeArea(
         child: Scaffold(
       resizeToAvoidBottomInset: true,
-      appBar: GeneralAppBar(isBackArrowShow: true),
+      appBar: GeneralAppBar(isBackArrowShow: false),
       body: HomePageBody(),
     ));
   }

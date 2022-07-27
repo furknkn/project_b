@@ -118,7 +118,9 @@ class HomePageViewModel with ChangeNotifier {
     changeIsLoad();
   }
 
-  void localSearchAdd() {}
+  void localSearchAdd() {
+    HomePageRepository().addLocaleSearc(search, txtSearchController.text);
+  }
 
   Future<void> fetchFilmList() async {
     localSearchAdd();

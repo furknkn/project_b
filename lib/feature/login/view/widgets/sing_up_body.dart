@@ -29,6 +29,7 @@ class SingUpBody extends StatelessWidget {
               height: context.mediumValue,
             ),
             CustomTextFormField(
+              obscureText: true,
               hintText: LocaleKeys.password.locale,
               textEditingController: loginViewModel.txtPasswordController,
               focusNode: loginViewModel.passwordFocusNode,

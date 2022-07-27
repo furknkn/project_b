@@ -59,7 +59,7 @@ class SortShowSheet {
               color: AppColors.appGrey.withOpacity(.1),
               child: Center(
                   child: Text(
-                LocaleKeys.az.locale,
+                name,
                 style: AppTextStyles.button16Regular
                     .copyWith(color: AppColors.appBlue),
               )),

@@ -18,7 +18,11 @@ class GeneralAppBar extends StatelessWidget implements PreferredSizeWidget {
         child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
           isBackArrowShow
-              ? IconButton(onPressed: () {}, icon: const Icon(Icons.arrow_back))
+              ? IconButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  icon: const Icon(Icons.arrow_back))
               : const SizedBox.shrink(),
           IconButton(
               onPressed: () {
