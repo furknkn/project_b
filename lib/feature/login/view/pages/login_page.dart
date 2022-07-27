@@ -22,7 +22,7 @@ class _LoginPageState extends State<LoginPage> {
       body: SafeArea(
         child: Consumer<LoginViewModel>(
           builder: (context, loginViewModel, child) {
-            return loginViewModel.isLoad
+            return !loginViewModel.isLoad
                 ? GestureDetector(
                     onTap: () => FocusScope.of(context).unfocus(),
                     child: Center(
